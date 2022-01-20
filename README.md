@@ -16,7 +16,8 @@ This has led to online grocery shopping becoming more and more prominent, and th
 
 ## Colab Notebook
 
-Basket-Sensitive Random Walk & Factorization Machine Recommendation for Grocery Shopping in R: [Google Colab]() | [Code]()
+Basket-Sensitive Random Walk & Factorization Machine Recommendation for Grocery Shopping in R:<br/>
+[Google Colab]() | [Code]()
 
 ## Prerequisites
 * Linux or macOS
@@ -26,7 +27,21 @@ Basket-Sensitive Random Walk & Factorization Machine Recommendation for Grocery 
 ## Getting Started
 
 ### Installation
+* Clone this repository.
+```
+git clone https://github.com/huytjuh/Recommender-System-Basket-Analysis
+cd Recommender-System-Basket-Analysis
+```
+* Install R dependencies using `requirements.txt`.
+```
+#!./scripts/install_pkgs.sh
+while IFS=" " read -r package version; 
+do 
+  Rscript -e "devtools::install_version('"$package"', version='"$version"')"; 
+done < "requirements.txt"
+```
 
+### 
 
 
 ## Acknowledgements
