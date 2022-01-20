@@ -41,8 +41,16 @@ do
 done < "requirements.txt"
 ```
 
-### 
+### Run Recommender System
+* Download a Basket Grocery dataset:
+```
 
+```
+* Calculate similarity scores and train a model:
+```
+
+```
+* adasd
 
 ## Acknowledgements
 
