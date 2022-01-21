@@ -1,13 +1,13 @@
 # **Recommender System Basket Analysis**
-
 ![](https://www.aarki.com/hubfs/ML-recommendation-engine-1.jpg)
+![](https://img.shields.io/github/license/huytjuh/Recommender-System-Basket-Analysis)
 
 Basket-Sensitive Random Walk & Factorization Machine Recommendations for Grocery Shopping. 
 Item-based Collaborative Filtering (CF) using hybrid memory- and model-based methods with Factorization Machines and Alternative Least Squares.
 
 R implementation from scratch inspired by paper [Li et al (2009)](https://www.researchgate.net/profile/Paulo-Lisboa/publication/221653590_Grocery_shopping_recommendations_based_on_basket-sensitive_random_walk/links/09e4150cb9fb091a30000000/Grocery-shopping-recommendations-based-on-basket-sensitive-random-walk.pdf).
 
-***Version: 1.0 (2019)***
+***Version: 1.0 (2019)*** 
 
 ---
 
