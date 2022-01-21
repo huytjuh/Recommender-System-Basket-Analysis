@@ -59,6 +59,24 @@ Rscript train.R
 Rscript main.R
 ```
 
-## Acknowledgements
+## Algorithms
+The table below lists the recommender algorithms currently available in the repository. Python scripts are linked under the Code column, explaining in detail the math and implementation of the algorithm including comments and documentations.
 
-Code is inspired by [qqwweee/keras-yolo3](https://github.com/qqwweee/keras-yolo3).
+| Algorithms                               | Type                                   | Description                                                                                                                                                                                                                       | Code |
+|------------------------------------------|----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
+| Popularity (pop)                         | Naive                                  | Naive recommendations based on most popular items bought by users and not in the basket.                                                                                                                                          | Code |
+| Cosine<br /> (CF(cos))                   | Collaborative Filtering (Memory-based) | Cosine-based similarities calculated from the cosine of the angle between two items thought of as two vectors in the m dimensional user-space.                                                                                    | Code |
+| Conditional Probability (CF(cp))         | Collaborative Filtering (Memory-based) | Conditional probability based similarities taking rating scale between users into account and normalized including a control variable alpha to penalize popular items.                                                            | Code |
+| Bipartite Network<br /> (CF(bn))         | Collaborative Filtering (Memory-based) | Bipartite network based similarities calculated from a bipartite graph describing the shopping basket data containing two nodes: consumers and products; thus, can be defined as the transition probability between each product. | Code |
+| Alternate Least Square<br />(ALS)        | Collaborative Filtering (Model-based)  | Matrix factorization algorithm for explicit or implicit feedback in large datasets by decomposing the user-matrix into smaller dimension user and item features.                                                                  | Code |
+| Factorization Machine<br />(FM)          | Collaborative Filtering (Model-based)  | Extended matrix factorization model allowing for feature-rich datasets by including higher-order interactions between variables of larger domain and combining both regression and factorization methods.                         | Code |
+| Basket-Sensitive Random Walk<br />(BSRW) | Hybrid                                 | A stochastic process dictating the likelihood of jumping from one item to another as extension to further explore transitive associations by incorporating the current shopping context into the Collaborative Filtering models.  | Code | 
+
+## 
+
+## Reference Papers
+
+* Li, M., Dias, B. M., Jarman, I., El-Deredy, W., & Lisboa, P. J. (2009, June). Grocery shopping recommendations based on basket-sensitive random walk. In Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining (pp. 1215-1224). Available online: [Link](https://www.researchgate.net/profile/Paulo-Lisboa/publication/221653590_Grocery_shopping_recommendations_based_on_basket-sensitive_random_walk/links/09e4150cb9fb091a30000000/Grocery-shopping-recommendations-based-on-basket-sensitive-random-walk.pdf)
+* Le, D. T., Lauw, H. W., & Fang, Y. (2017). Basket-sensitive personalized item recommendation. IJCAI. Available online: [Link](http://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=4767&context=sis_research)
+
+
