@@ -1,6 +1,6 @@
-![](https://www.aarki.com/hubfs/ML-recommendation-engine-1.jpg)
-
 # **Recommender System Basket Analysis**
+
+![](https://www.aarki.com/hubfs/ML-recommendation-engine-1.jpg)
 
 Basket-Sensitive Random Walk & Factorization Machine Recommendations for Grocery Shopping. 
 Item-based Collaborative Filtering (CF) using hybrid memory- and model-based methods with Factorization Machines and Alternative Least Squares.
