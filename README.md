@@ -72,10 +72,12 @@ The table below lists the recommender algorithms currently available in the repo
 | Factorization Machine<br /> (FM)          | Collaborative Filtering (Model-based)  | Extended matrix factorization model allowing for feature-rich datasets by including higher-order interactions between variables of larger domain and combining both regression and factorization methods.                         | [Code]() |
 | Basket-Sensitive Random Walk<br /> (BSRW) | Hybrid                                 | A stochastic process dictating the likelihood of jumping from one item to another as extension to further explore transitive associations by incorporating the current shopping context into the Collaborative Filtering models.  | [Code]() |
 
-## Performances
+## Test Results & Performances
+A comparison between different Recommender System algorithms which can be categorized into three types of models: similarity-based CF methods, BSRW-based methods, and model-based methods. We run the comparison on three different evaluation metrics: Binary Hit Rates on least three popular items *bHR(pop)* and three randomly selected items *bHR(rnd)*, and Weighted Hit Rate based on leave-one-out cross-validation *wHR(loo)*. Additionally, we provide a [Notebook]() to illustrate how the different algorithms could be evaluated and compared.
+
 | <br /> Algorithm | L-3-O<br /> bHR(pop) | L-3-O<br /> bHR(rnd) | L-1-O<br /> wHR(loo) |
 |---|:---:|:---:|:---:|
-| pop | 00.43 | 16.80 | 2.83 |
+| pop | 0.43 | 16.80 | 2.83 |
 | CF(cos) | 16.72 | 31.62 | 5.65 |
 | CF(cp) | 16.46 | 30.84 | 5.67 |
 | CF(bn) | 16.75 | 31.88 | 5.79 |
@@ -83,9 +85,10 @@ The table below lists the recommender algorithms currently available in the repo
 | CF(cp) + BSRW | 16.46 | 30.80 | 5.71 |
 | CF(bn) + BSRW | 16.75 | 31.84 | 5.78 |
 | ALS | 15.28 | 26.28 | 4.34 |
-| BFSM | 20.17 | 19.21 | 2.25 |
+| BFSM* | 20.17 | 19.21 | 2.25 |
 | Hybrid | 15.28 | 26.36 | 4.32 |
 
+*A subset of 10% of the testing had to be taken instead due to its computational heavy nature of Factorization Machine
 
 ## Reference Papers
 
