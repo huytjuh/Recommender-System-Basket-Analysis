@@ -7,7 +7,7 @@ Item-based Collaborative Filtering (CF) using hybrid memory- and model-based met
 
 R implementation from scratch inspired by paper [Li et al (2009)](https://www.researchgate.net/profile/Paulo-Lisboa/publication/221653590_Grocery_shopping_recommendations_based_on_basket-sensitive_random_walk/links/09e4150cb9fb091a30000000/Grocery-shopping-recommendations-based-on-basket-sensitive-random-walk.pdf).
 
-
+***Version: 1.0 (2019)***
 
 ---
 
@@ -46,13 +46,18 @@ done < "requirements.txt"
 ### Run Recommender System
 * Download a Basket Grocery dataset:
 ```
-
+datasets/ta_feng_all_months_merged.csv
 ```
-* Calculate similarity scores and train a model:
+* Train Recommender System & Calculate Similariy Scores
 ```
-
+#!./scripts/run_train.sh
+Rscript train.R
 ```
-* adasd
+* Test Recommender System
+```
+#!./scripts/run_train.sh
+Rscript main.R
+```
 
 ## Acknowledgements
 
