@@ -1,0 +1,9 @@
+dplyr
+data.table
+recommenderlab
+lsa
+Matrix
+rlist
+reticulate
+ggplot2
+plotly
