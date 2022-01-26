@@ -55,7 +55,7 @@ Rscript train.R
 ```
 * Test Recommender System
 ```
-#!./scripts/run_train.sh
+#!./scripts/run_main.sh
 Rscript main.R
 ```
 
